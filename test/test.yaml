@@ -3,9 +3,6 @@ functions_parameters:
     adb_port:
       from: base
       key: adb_port
-    gg:
-      from: gg
-      key: gg
     package_name:
       from: message
       key: package_name
