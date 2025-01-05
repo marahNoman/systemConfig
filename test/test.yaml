@@ -14,9 +14,9 @@ functions_parameters:
       from: dd
       key: dd
   launch_app:
-    oo:
-      from: oo
-      key: oo
+    oo2:
+      from: oo2
+      key: oo2
   push_file:
     adb_port:
       from: base
