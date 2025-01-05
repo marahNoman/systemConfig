@@ -6,10 +6,6 @@ functions_parameters:
     package_name:
       from: message
       key: package_name
-  match_avd_name:
-    q:
-      from: q
-      key: q
   push_file:
     adb_port:
       from: base
