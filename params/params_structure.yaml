@@ -27,6 +27,3 @@ per_operation_parameters:
     instance_id:
       from: message
       key: instance_id
-    rr:
-      from: rr
-      key: null
