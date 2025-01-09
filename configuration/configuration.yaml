@@ -7,13 +7,11 @@ operations:
     mapped_operation: create_avd
   START_AVD:
     mapped_operation: start_avd
-  ss:
-    mapped_operation: ss
-  string:
-    mapped_operation: string
   test:
     mapped_operation: test
   test11:
     mapped_operation: test11
   test55:
     mapped_operation: test55
+  ww:
+    mapped_operation: ww
