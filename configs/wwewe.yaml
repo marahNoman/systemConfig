@@ -1,0 +1,10 @@
+wwewe.yaml:
+  record_final_state: true
+  final_success_state_code: dfsadsa
+  final_failure_state_code: dasd
+  apps:
+    qq:
+      package_name: qq
+      apk_path: qq
+  steps_order: []
+  steps: {}
