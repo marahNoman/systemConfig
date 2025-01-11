@@ -1,0 +1,26 @@
+wwewe22.yaml:
+  record_final_state: true
+  final_success_state_code: gfcfggf
+  final_failure_state_code: fgh
+  apps:
+    qq:
+      package_name: qq
+      apk_path: qq
+  steps_order:
+  - reerere
+  steps:
+    reerere:
+      module: utilities.helpers.avd_utils
+      function: install_apk_with_permissions
+      description: rdeg
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 3434.0
+      post_delay: 234234.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: fs
+      success_state_code: fsf
+      failure_state_code: sdf
+      params: {}
