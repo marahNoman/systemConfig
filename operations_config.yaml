@@ -13,5 +13,5 @@ operations:
     mapped_operation: test11
   test55:
     mapped_operation: test55
-  vv:
-    mapped_operation: vv
+  vv2:
+    mapped_operation: vv2
