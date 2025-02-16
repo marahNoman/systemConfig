@@ -1,6 +1,8 @@
 operations:
   ACTIVATE_WHATSAPP:
     mapped_operation: activate_whatsapp
+  CONFIGURE_PROXY:
+    mapped_operation: configure_proxy
   CONFIGURE_VPN:
     mapped_operation: configure_vpn
   CREATE_EMULATOR:
