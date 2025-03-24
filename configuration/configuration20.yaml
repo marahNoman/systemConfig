@@ -1,0 +1,74 @@
+configuration/configuration20.yaml:
+  record_final_state: true
+  final_success_state_code: create_avd
+  final_failure_state_code: create_avd
+  apps:
+    vpn_app:
+      package_name: com.wireguard.android
+      apk_path: ./apk/wireguard.apk
+  steps_order:
+  - stop_emulators_step
+  - q
+  - check_avd_files_step
+  - yy
+  steps:
+    stop_emulators_step:
+      module: utilities.helpers.avd_utils
+      function: stop_user_emulators
+      description: Stopping existing emulators.
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 0.0
+      post_delay: 3.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: STOP_EMULATORS_INITIATED
+      success_state_code: STOPPING_EXISTING_EMULATORS_SUCCESS
+      failure_state_code: STOPPING_EXISTING_EMULATORS_FAILED
+      params: {}
+    check_avd_files_step:
+      module: utilities.helpers.avd_utils
+      function: check_avd_files_exist
+      description: Checking if AVD files exist.
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 0.0
+      post_delay: 0.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: CHECKING_FILES_INITIATED
+      success_state_code: AVD_FILES_EXIST
+      failure_state_code: CHECK_AVD_FILES_FAILED
+      params: {}
+    q:
+      module: utilities.helpers.avd_utils
+      function: wait_for_emulator_removed
+      description: q
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 0.0
+      post_delay: 3.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: '7'
+      success_state_code: '7'
+      failure_state_code: '7'
+      params: {}
+    yy:
+      module: utilities.helpers.avd_utils
+      function: wait_for_emulator_removed
+      description: yy
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 0.0
+      post_delay: 0.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: r
+      success_state_code: r
+      failure_state_code: r
+      params: {}
