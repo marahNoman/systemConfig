@@ -9,5 +9,5 @@ operations:
     mapped_operation: create_avd
   START_AVD:
     mapped_operation: start_avd
-  test55:
-    mapped_operation: test55
+  test5:
+    mapped_operation: test5
