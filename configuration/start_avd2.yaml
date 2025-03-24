@@ -1,0 +1,26 @@
+configuration/start_avd2.yaml:
+  record_final_state: true
+  final_success_state_code: START_AVD_SUCCESS
+  final_failure_state_code: START_AVD_FAILURE
+  apps:
+    vpn_app:
+      package_name: com.wireguard.android
+      apk_path: ./apk/wireguard.apk
+  steps_order:
+  - wqeeqeEDIT
+  steps:
+    wqeeqeEDIT:
+      module: sequence.executor
+      function: perform_sequence
+      description: wqewqeEDIT
+      mandatory: true
+      fail_strategy: ignore_failure
+      pre_delay: 3.0
+      post_delay: 34.0
+      ascii_enabled: true
+      record_state: false
+      send_to_exchange: false
+      start_state_code: qweEDIT
+      success_state_code: qeEDIT
+      failure_state_code: qweEDIT
+      params: {}
