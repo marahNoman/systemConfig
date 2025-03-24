@@ -1,0 +1,10 @@
+configuration/configuration50.yaml:
+  record_final_state: true
+  final_success_state_code: startAVD
+  final_failure_state_code: startAVD
+  apps:
+    vpn_app:
+      package_name: com.wireguard.android
+      apk_path: ./apk/wireguard.apk
+  steps_order: []
+  steps: {}
