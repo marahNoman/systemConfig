@@ -1,0 +1,26 @@
+configuration/test3.yaml:
+  record_final_state: true
+  final_success_state_code: test3
+  final_failure_state_code: test3
+  apps:
+    vpn_app:
+      package_name: com.wireguard.android
+      apk_path: ./apk/wireguard.apk
+  steps_order:
+  - test
+  steps:
+    test:
+      module: sequence.executor
+      function: perform_sequence
+      description: test
+      mandatory: true
+      fail_strategy: fail_operation
+      pre_delay: 0.0
+      post_delay: 0.0
+      ascii_enabled: true
+      record_state: true
+      send_to_exchange: true
+      start_state_code: test
+      success_state_code: test
+      failure_state_code: test
+      params: {}
