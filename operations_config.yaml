@@ -7,7 +7,7 @@ operations:
     mapped_operation: configure_vpn
   CREATE_EMULATOR:
     mapped_operation: create_avd
-  START_AVD:
+  start_avd:
     mapped_operation: start_avd
   test5:
     mapped_operation: test5
