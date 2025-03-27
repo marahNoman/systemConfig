@@ -3,4 +3,8 @@ functions_parameters:
     fixed_value:
       from: static
       key: some_static_param
-per_operation_parameters: {}
+per_operation_parameters:
+  start_avd:
+    instance_id:
+      from: message
+      key: instance_id
